@@ -1,0 +1,27 @@
+body
+{
+    background-color: #0d6efd;
+}
+
+.navbar
+{
+    display: flex;
+    justify-content: center;
+}
+
+.navbarButton
+{
+    background-color: white;
+    color:rgb(55, 53, 53);
+}
+
+.heroHeader
+{
+    color: white;
+    font-weight: bolder;
+}
+
+.heroText
+{
+    color: white;
+}
