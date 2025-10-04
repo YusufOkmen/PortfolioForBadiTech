@@ -25,3 +25,24 @@ body
 {
     color: white;
 }
+
+.heroImg
+{
+    border-radius: 20px;
+    filter: blur(2.5px); /* Makes the image blurry */
+    transition: filter 0.5s ease, transform 0.5s ease; /* Smooth transitions */
+    transform: scale(1); /* Default size */
+}
+
+.heroImg:hover
+{
+    filter: blur(0); /* Removes the blur when hovered */
+    transform: scale(1.1); /* Slight zoom in */
+}
+
+.heroButton
+{
+    font-weight: bolder;
+    border: none;
+    margin-top: 25%;
+}
