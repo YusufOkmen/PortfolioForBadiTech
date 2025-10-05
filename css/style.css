@@ -1,19 +1,15 @@
 body
 {
-    background-color: #0d6efd;
+    background-color: whi;
 }
 
-.navbar
+
+
+.navbar-toggler
 {
-    display: flex;
-    justify-content: center;
+    border-color: white;
 }
 
-.navbarButton
-{
-    background-color: white;
-    color:rgb(55, 53, 53);
-}
 
 .heroHeader
 {
@@ -29,7 +25,7 @@ body
 .heroImg
 {
     border-radius: 20px;
-    filter: blur(2.5px); /* Makes the image blurry */
+    filter: blur(5px); /* Makes the image blurry */
     transition: filter 0.5s ease, transform 0.5s ease; /* Smooth transitions */
     transform: scale(1); /* Default size */
 }
@@ -45,4 +41,13 @@ body
     font-weight: bolder;
     border: none;
     margin-top: 25%;
+}
+
+.heroPattern
+{
+  position: absolute;
+  opacity: 0.2;
+  z-index: 0;
+  top: 5%;
+  left: 5%;
 }
