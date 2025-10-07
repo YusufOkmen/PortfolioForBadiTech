@@ -1,51 +1,84 @@
-body
-{
+body {
     background-color: whi;
 }
 
 
 
-.navbar-toggler
-{
+.navbar-toggler {
     border-color: white;
 }
 
 
-.heroHeader
-{
+.heroHeader {
     color: white;
     font-weight: bolder;
 }
 
-.heroText
-{
+.heroText {
     color: white;
 }
 
-.heroImg
-{
+.heroImg {
     border-radius: 20px;
-    filter: blur(5px); /* Makes the image blurry */
-    transition: filter 0.5s ease, transform 0.5s ease; /* Smooth transitions */
-    transform: scale(1); /* Default size */
+    filter: blur(5px);
+    /* Makes the image blurry */
+    transition: filter 0.5s ease, transform 0.5s ease;
+    /* Smooth transitions */
+    transform: scale(1);
+    /* Default size */
 }
 
-.heroImg:hover
-{
-    filter: blur(0); /* Removes the blur when hovered */
-    transform: scale(1.1); /* Slight zoom in */
+.heroImg:hover {
+    filter: blur(0);
+    /* Removes the blur when hovered */
+    transform: scale(1.1);
+    /* Slight zoom in */
 }
 
-.heroButton
-{
+.heroButton {
     font-weight: bolder;
     border: none;
     margin-top: 25%;
 }
 
-.ellipseHero
-{
-  position: absolute;
-  opacity: 0.1;
-  z-index: 0;
+.ellipseHero {
+    position: absolute;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .heroImg {
+        max-width: 100%;
+        filter: blur(2px);
+    }
+
+    .heroSection {
+        text-align: center;
+        padding: 0rem 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .ellipseHero {
+        display: none;
+        /* Hide the floating circles on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
 }
