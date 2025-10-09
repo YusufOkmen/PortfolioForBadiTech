@@ -66,6 +66,10 @@
         <img src="img/Ellipse zero.png" class="ellipseHero" style="left: 49%;top: 98%; width: 4%;" alt="">
         <img src="img/Ellipse zero.png" class="ellipseHero" style="right: 12%;top: 95%; width: 6%;" alt="">
         <img src="img/Ellipse zero.png" class="ellipseHero" style="right: 16%;top: 100%; width: 4%;" alt="">
+        <img src="img/Ellipse zero.png" class="ellipseHero" style="left: 35%;top: 180%; width: 4%;" alt="">
+        <img src="img/Ellipse zero.png" class="ellipseHero" style="left: 35%;top: 185%; width: 3%;" alt="">
+        <img src="img/Ellipse zero.png" class="ellipseHero" style="left: 55%;top: 180%; width: 6%;" alt="">
+        <img src="img/Ellipse zero.png" class="ellipseHero" style="left: 59%;top: 180%; width: 4%;" alt="">
 
         <h1 class="display-4  text-body-emphasis" style="color: white; text-align: center; padding-bottom: 2rem;">My
             Main Projects</h1>
@@ -142,7 +146,31 @@
 
 
 
+    <script>
+        // When hero image or any card is hovered, scale ellipses
+        const heroImg = document.querySelector('.heroImg');
+        const cards = document.querySelectorAll('.card');
+        const ellipses = document.querySelectorAll('.ellipseHero');
 
+        function scaleEllipses(scale) {
+            ellipses.forEach(e => {
+                e.style.transform = `scale(${scale})`;
+                e.style.transition = 'transform 0.6s ease';
+            });
+        }
+
+        // Hover effect for hero image
+        if (heroImg) {
+            heroImg.addEventListener('mouseenter', () => scaleEllipses(1.3));
+            heroImg.addEventListener('mouseleave', () => scaleEllipses(1));
+        }
+
+        // Hover effect for cards
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => scaleEllipses(1.3));
+            card.addEventListener('mouseleave', () => scaleEllipses(1));
+        });
+    </script>
 
 
 
